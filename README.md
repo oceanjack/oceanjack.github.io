@@ -1,2 +1,2 @@
-welcome to my blog
+(welcome)[oceanjack.github.io]
 ===================
