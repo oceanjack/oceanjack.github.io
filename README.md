@@ -1,2 +1,2 @@
-(welcome)[oceanjack.github.io]
+[Welcome!](http://oceanjack.github.io)
 ===================
