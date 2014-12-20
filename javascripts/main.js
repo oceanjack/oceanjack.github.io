@@ -25,7 +25,7 @@ var baiduTongji = function() {
 var shareWeixin = function() {
   var imgUrl = window.location.origin + "/images/share.jpg";
   var lineLink = window.location.href;
-  var descContent = $('.header').text();
+  var descContent = "文章 - " + $('.header').text();
   var shareTitle = document.title;
   var appid = '';
   function shareFriend() {
