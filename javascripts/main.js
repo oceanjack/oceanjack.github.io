@@ -21,3 +21,55 @@ var baiduTongji = function() {
     s.parentNode.insertBefore(hm, s);
   })();
 }();
+
+var shareWeixin = function() {
+  var imgUrl = window.location.origin + "/images/share.jpg";
+  var lineLink = window.location.href;
+  var descContent = $('.header').text();
+  var shareTitle = document.title;
+  var appid = '';
+  function shareFriend() {
+    WeixinJSBridge.invoke('sendAppMessage',{
+      "appid": appid,
+      "img_url": imgUrl,
+      "img_width": "200",
+      "img_height": "200",
+      "link": lineLink,
+      "desc": descContent,
+      "title": shareTitle
+    }, function(res) {
+      window.location.reload();
+    });
+  };
+  function shareTimeline() {
+    WeixinJSBridge.invoke('shareTimeline',{
+      "img_url": imgUrl,
+      "img_width": "200",
+      "img_height": "200",
+      "link": lineLink,
+      "desc": descContent,
+      "title": shareTitle
+    }, function(res) {
+      window.location.reload();
+    });
+  }
+  function shareWeibo() {
+    WeixinJSBridge.invoke('shareWeibo',{
+      "content": descContent,
+      "url": lineLink,
+    }, function(res) {
+      window.location.reload();
+    });
+  }
+  document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+    WeixinJSBridge.on('menu:share:appmessage', function(argv){
+      shareFriend();
+    });
+    WeixinJSBridge.on('menu:share:timeline', function(argv){
+      shareTimeline();
+    });
+    WeixinJSBridge.on('menu:share:weibo', function(argv){
+      shareWeibo();
+    });
+  }, false);
+}();
