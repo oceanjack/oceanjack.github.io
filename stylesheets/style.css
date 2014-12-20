@@ -889,6 +889,7 @@ body > .head {
   line-height:36px;
   color:#999;
   text-align:center;
+  cursor:pointer;
 }
 .content-wrapper {
   padding-top:36px;
@@ -907,4 +908,42 @@ body > .head {
 }
 .article .content p {
   font-size:1em;
+}
+.article img {
+  max-width: 100%;
+  border: 7px solid #fff;
+  box-sizing: border-box;
+  box-shadow:0px 0px 3px #777;
+}
+.article .content .italic {
+  font-style: italic;
+  position:relative;
+  padding-top:12px;
+  padding-bottom:12px;
+  padding-left:24px;
+  display:inline-block;
+}
+.article .content .italic:before {
+  content: "“";
+  font-size:2em;
+  position:absolute;
+  top:-12px;
+  left:0;
+  color:#bbb;
+}
+.article .content .italic:after {
+  content: "”";
+  font-size:2em;
+  position:absolute;
+  bottom:-12px;
+  right:0;
+  color:#bbb;
+}
+body > .foot {
+  width:100%;
+  text-align:center;
+  font-size:0.7em;
+  color:#aaa;
+  padding-top:12px;
+  padding-bottom:12px;
 }

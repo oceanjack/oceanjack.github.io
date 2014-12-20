@@ -23,7 +23,7 @@ var baiduTongji = function() {
 }();
 
 var shareWeixin = function() {
-  var imgUrl = window.location.origin + "/images/share.jpg";
+  var imgUrl = window.location.origin + $('.article img')[0].src;
   var lineLink = window.location.href;
   var descContent = "文章 - " + $('.header').text();
   var shareTitle = document.title;
