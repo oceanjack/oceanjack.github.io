@@ -919,7 +919,7 @@ body > .head {
   font-style: italic;
   position:relative;
   padding-top:12px;
-  padding-bottom:12px;
+  padding-bottom:16px;
   padding-left:24px;
   display:inline-block;
 }
@@ -935,8 +935,8 @@ body > .head {
   content: "”";
   font-size:2em;
   position:absolute;
-  bottom:-12px;
-  right:0;
+  bottom:-16px;
+  right:-12px;
   color:#bbb;
 }
 body > .foot {
