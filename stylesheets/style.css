@@ -890,6 +890,8 @@ body > .head {
   color:#999;
   text-align:center;
   cursor:pointer;
+  z-index:100;
+  opacity:0.9;
 }
 .content-wrapper {
   padding-top:36px;
