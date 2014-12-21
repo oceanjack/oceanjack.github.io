@@ -1,0 +1,3 @@
+[submodule "musketeers"]
+	path = musketeers
+	url = https://github.com/oceanjack/musketeers.git
