@@ -77,7 +77,7 @@ var shareWeixin = function() {
 //评论
 var duoshuoQuery = {short_name:"oceanjack"};
 var duoshuo = function() {
-  if(indexPage) {
+  if(typeof indexPage != 'undefined' && indexPage) {
     return;
   }
   var node = $('<div class="ds-thread" data-thread-key="d69367cb1368a732a8076b4497075815" data-title="' + $('.header').text() + '" data-url="' + window.location.href + '"></div>');
@@ -89,4 +89,5 @@ var duoshuo = function() {
     ds.charset = 'UTF-8';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
   })();
-}();
+};
+duoshuo();
