@@ -77,6 +77,9 @@ var shareWeixin = function() {
 //评论
 var duoshuoQuery = {short_name:"oceanjack"};
 var duoshuo = function() {
+  if(indexPage) {
+    return;
+  }
   var node = $('<div class="ds-thread" data-thread-key="d69367cb1368a732a8076b4497075815" data-title="' + $('.header').text() + '" data-url="' + window.location.href + '"></div>');
   $('.content-wrapper').append(node);
   (function() {
