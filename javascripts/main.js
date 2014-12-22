@@ -73,3 +73,17 @@ var shareWeixin = function() {
     });
   }, false);
 }();
+
+//评论
+var duoshuoQuery = {short_name:"oceanjack"};
+var duoshuo = function() {
+  var node = $('<div class="ds-thread" data-thread-key="d69367cb1368a732a8076b4497075815" data-title="' + $('.header').text() + '" data-url="' + window.location.href + '"></div>');
+  $('.content-wrapper').append(node);
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+}();
