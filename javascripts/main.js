@@ -80,7 +80,7 @@ var duoshuo = function() {
   if(typeof indexPage != 'undefined' && indexPage) {
     return;
   }
-  var node = $('<div class="ds-thread" data-thread-key="' + $('.article .date').text() + '" data-title="' + $('.header').text() + '" data-url="' + window.location.href + '"></div>');
+  var node = $('<div class="ds-thread" data-thread-key="' + $('.article .date').text() + "_" + '" data-title="' + $('.header').text() + '" data-url="' + window.location.href + '"></div>');
   $('.content-wrapper').append(node);
   (function() {
     var ds = document.createElement('script');
