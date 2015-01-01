@@ -898,6 +898,10 @@ body > .head {
   width:88%;
   margin-left:6%;
 }
+.article {
+  width:100%;
+  max-width:640px;
+}
 .article .header {
   font-size:1.618em;
   line-height:normal;
@@ -918,6 +922,9 @@ body > .head {
   box-shadow:0px 0px 3px #777;
   margin-bottom:20px;
   display:block;
+}
+.article iframe {
+  width:100%;
 }
 .article .content .italic {
   font-style: italic;
