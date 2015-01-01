@@ -44,7 +44,7 @@ var getMap = function() {
       {
         lng: 0,
         lat: 0,
-        title: '无'
+        title: '无',
         text: '无',
         img: 'images/000003/back.jpg'
       }
