@@ -26,9 +26,13 @@ var getMap = function() {
 	            	infoWindow.redraw();
 	            }, 4700);
 	          };
-	        	var con = "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>" + pos[id].title + "</h4>" + 
-            "<img style='float:right;margin:4px' id='imgDemo' src='" + pos[id].img + "' width='139' height='104' title='" + pos[id].title + "'/>" + 
-            "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>" + pos[id].text + "</p>"
+	        	var con = "<div class='article'>" +
+                        "<div class='header'>" + pos[id].title + "</div>" +
+                        "<div class='content'>" + 
+                          "<p>" + pos[id].text + "<p>" +
+                          "<img src='" + pos[id].img + "'>"
+                        "</div>" + 
+                      "</div>";
 		        getMsg(con);
 	        };
 	      }(i));
