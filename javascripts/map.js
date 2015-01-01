@@ -9,10 +9,6 @@ var getMap = function() {
 	      points.push(new BMap.Point(pos[i].lng, pos[i].lat));
 	    }
 	    var len = points.length;
-	    //for(var i = 0; i < len; ++i) {
-	    //  var curve = new BMapLib.CurveLine([point, points[i]], {strokeColor:"red", strokeWeight:2, strokeOpacity:0.5});
-	    //  map.addOverlay(curve);
-	    //}
 	    var markers = [new BMap.Marker(point)];
 	    for(var i = 0; i < len; ++i) {
 	      markers.push(new BMap.Marker(points[i]));
@@ -42,11 +38,11 @@ var getMap = function() {
     //临时数据
 	  var pos = [
       {
-        lng: 0,
-        lat: 0,
-        title: '无',
-        text: '无',
-        img: 'images/000003/back.jpg'
+        lng: 40.0080982,
+        lat: 116.2982148,
+        title: '圆明园',
+        text: '2014年12月25日，跟高中同学一起来的圆明园。今天北京天气不错，难得雾都能碰到这种天气，于是啪啪啪拍了不少照片。自从辞职后一直要说出远门来着，结果一直忙着各种事情，今天总算放松下了~',
+        img: 'images/000003/back2.jpg'
       }
     ]
 	  getPos(pos);
