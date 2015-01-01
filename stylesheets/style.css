@@ -925,7 +925,7 @@ body > .head {
 }
 .article iframe {
   width:100%;
-  min-height:320px;
+  min-height:640px;
 }
 .article .content .italic {
   font-style: italic;
