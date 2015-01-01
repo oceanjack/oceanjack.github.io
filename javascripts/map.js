@@ -26,7 +26,7 @@ var getMap = function() {
 	            	infoWindow.redraw();
 	            }, 4700);
 	          };
-	        	var con = "<div class='article'>" +
+	        	var con = "<div class='article maparticle'>" +
                         "<div class='header'>" + pos[id].title + "</div>" +
                         "<div class='content'>" + 
                           "<p>" + pos[id].text + "<p>" +

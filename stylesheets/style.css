@@ -959,3 +959,6 @@ body > .foot {
   padding-top:12px;
   padding-bottom:12px;
 }
+.maparticle {
+  max-width: 280px;
+}
