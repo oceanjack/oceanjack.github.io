@@ -9,10 +9,10 @@ var getMap = function() {
 	      points.push(new BMap.Point(pos[i].lng, pos[i].lat));
 	    }
 	    var len = points.length;
-	    for(var i = 0; i < len; ++i) {
-	      var curve = new BMapLib.CurveLine([point, points[i]], {strokeColor:"red", strokeWeight:2, strokeOpacity:0.5});
-	      map.addOverlay(curve);
-	    }
+	    //for(var i = 0; i < len; ++i) {
+	    //  var curve = new BMapLib.CurveLine([point, points[i]], {strokeColor:"red", strokeWeight:2, strokeOpacity:0.5});
+	    //  map.addOverlay(curve);
+	    //}
 	    var markers = [new BMap.Marker(point)];
 	    for(var i = 0; i < len; ++i) {
 	      markers.push(new BMap.Marker(points[i]));
