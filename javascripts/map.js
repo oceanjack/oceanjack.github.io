@@ -1,9 +1,9 @@
 var getMap = function() {
-  var map = new BMap.Map("allmap");
-  var point = new BMap.Point(118.855317, 32.035225);
-  map.centerAndZoom(point, 5);
-  map.enableScrollWheelZoom();
   var getPos = function(pos) {
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(118.855317, 32.035225);
+    map.centerAndZoom(point, 5);
+    map.enableScrollWheelZoom();
     var points = [];
     for(var i = 0, l = pos.length; i < l; ++i) {
       points.push(new BMap.Point(pos[i].lng, pos[i].lat));
