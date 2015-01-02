@@ -35,9 +35,9 @@ var getMap = function() {
               "</div>" + 
             "</div>";
 		      getMsg(con);
-	      };
-	    }(i));
-	  }
+        };
+      }(i));
+    }
 	};
 
   $.getJSON('/map.json', function(data) {
