@@ -34,11 +34,11 @@ var getMap = function() {
               "<img src='" + pos[id].img + "'>"
               "</div>" + 
             "</div>";
-		      getMsg(con);
+          getMsg(con);
         };
       }(i));
     }
-	};
+  };
 
   $.getJSON('/map.json', function(data) {
     getPos(data);
