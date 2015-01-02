@@ -23,7 +23,7 @@
         <div class="date">2014.12.26 北京</div>
         <div class="content">
           <p>跑去北京玩了，25号那天到的，然后惊呆了，理由如下图</p>
-          <img src="images/000003/back.jpg" />
+          <img src="images/2014/2014122601/back.jpg" />
           <p>好了下面基于百度地图搭建一个足迹图吧（以为我要写游记？），首先戳<a href="http://developer.baidu.com/map/index.php?title=jspopular">这里</a>看介绍，然后需要申请一个 key，之后去<a href="http://developer.baidu.com/map/jsdemo.htm">这里</a>看demo吧，基本需要的功能都有。</p>
           <p>因为考虑到这里会有点靠的比较近的情况，所以使用了点聚合，在页面引入<a href="http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js">这个</a>即可，然后使用这句话开启：new BMapLib.MarkerClusterer(map, {markers:markers}); map 指 BMap.Map，markers 就是那些 BMap.Point，这个功能好像在新版中没有看见。</p>
           <p>每次要把游玩的经纬度记下来，所以借助这个<a href="http://api.map.baidu.com/lbsapi/getpoint/index.html">工具</a>来处理下，至此足迹图诞生啦～点击<a href="../../map.html">这里</a>查看～</p>
