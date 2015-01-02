@@ -40,13 +40,8 @@ var getMap = function() {
 	    }
 	  };
 
-	  $.ajax({
-      type: 'GET',
-      url: 'http://oceanjack.net/map.json',
-      dataType: 'json',
-      success: function(data) {
-        getPos(data);
-      }
-    });
+    $.getJSON('/map.json', function(data){
+      getPos(data);
+    })
 }();
 
