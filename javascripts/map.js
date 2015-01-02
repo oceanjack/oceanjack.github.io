@@ -40,8 +40,8 @@ var getMap = function() {
 	    }
 	  };
 
-    $.getJSON('/map.json', function(data){
+    $.getJSON('/map.json', function(data) {
       getPos(data);
-    })
+    });
 }();
 
