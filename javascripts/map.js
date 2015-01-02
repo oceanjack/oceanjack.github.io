@@ -3,8 +3,7 @@ var getMap = function() {
   var map = new BMap.Map("allmap");
   var point = new BMap.Point(118.855317, 32.035225);
   map.centerAndZoom(point, 5);
-  map.enableScrollWheelZoom();
-  
+  map.enableScrollWheelZoom(); 
   var getPos = function(pos) {
     //创建点
     var points = [];
