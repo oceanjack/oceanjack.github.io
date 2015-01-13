@@ -936,6 +936,7 @@ body > .head .name {
 }
 .article .content p {
   font-size:1em;
+  line-height:1.6em;
 }
 .article img {
   max-width: 100%;
