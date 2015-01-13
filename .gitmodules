@@ -1,3 +1,6 @@
 [submodule "musketeers"]
 	path = musketeers
 	url = https://github.com/oceanjack/musketeers.git
+[submodule "CodeMirror"]
+	path = CodeMirror
+	url = https://github.com/codemirror/CodeMirror.git
