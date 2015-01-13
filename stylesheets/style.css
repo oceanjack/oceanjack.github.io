@@ -943,6 +943,9 @@ body > .head .name {
   border: 1px solid #eee;
   height: auto;
 }
+.article .alert {
+  color: #f00;
+}
 .article img {
   max-width: 100%;
   border: 7px solid #fff;

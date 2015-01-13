@@ -5,16 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="../../stylesheets/style.css" />
-    <link rel="stylesheet" type="text/css" href="../../CodeMirror/lib/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../../CodeMirror/theme/3024-night.css" />
-    <link rel="stylesheet" type="text/css" href="../../CodeMirror/addon/scroll/simplescrollbars.css" />
     <script src="../../javascripts/zepto.js"></script>
-    <script src="../../CodeMirror/lib/codemirror.js"></script>
-    <script src="../../CodeMirror/mode/xml/xml.js"></script>
-    <script src="../../CodeMirror/mode/javascript/javascript.js"></script>
-    <script src="../../CodeMirror/mode/css/css.js"></script>
-    <script src="../../CodeMirror/mode/htmlmixed/htmlmixed.js"></script>
-    <script src="../../CodeMirror/addon/scroll/simplescrollbars.js"></script>
     <title>潜浮洋流</title>
   </head>
   <body>
@@ -113,7 +104,7 @@
 </script>
           </textarea>
           <p>如果觉得翻页的切换效果不够 cool 那么请移步<a href="http://www.idangero.us/sliders/swiper/plugins/progress.php">这里</a>。使用了这个插件后可以自定义切换效果，尽情创作吧。</p>
-          <p>Animate.css 用于局部动画，各种飞来飞去的效果都是有的，基本就是使用 css3 来实现的。查看文档的话在<a target="_blank" href="https://github.com/daneden/animate.css">这</a>，对比 jQuery 或 zepto 的 animate 函数效果还是流畅不少，不过相比它们多吃了些内存。还有只在可视范围内做些动画，不在可视范围内的能停掉就停掉吧，不然。。。</p>
+          <p>Animate.css 用于局部动画，各种飞来飞去的效果都是有的，基本就是使用 css3 来实现的。查看文档的话在<a target="_blank" href="https://github.com/daneden/animate.css">这</a>，对比 jQuery 或 zepto 的 animate 函数效果还是流畅不少。animate 比较<span class="alert">吃内存</span>，所以尽量只在可视范围内做些动画，不在可视范围内的能停掉就停掉吧，不然。。。</p>
           <p>下面说明一下使用方法</p>
           <textarea class="code">
 <script>
@@ -152,13 +143,13 @@
     transform: rotate3d(0,0,1,180deg);
   }
 }
-.rotate {
+.rotateHalf {
   -webkit-animation-name: rotateHalf;
   animation-name: rotateHalf;
 }
 </style>
 <script>
-  $('#yourElement').addClass('animated rotate');
+  $('#yourElement').addClass('animated rotateHalf');
 </script>
           </textarea>
           <p>差点忘了 zepto，它是一个类似 jQuery 的 js 库，不过比 jQuery 更轻量体积更小，主要适用于移动浏览器端。用法基本跟 jQuery 基本一致。在 4G 还没大行其道的时候，还是考虑下可怜的网速吧。</p>
@@ -166,9 +157,19 @@
         </div>
         <div class="date">2015.01.03 南京</div>
       </div>
+      <hr />
     </div>
     <div class="foot">请勿转载&nbsp;@OceanJack&nbsp;2014</div>
     <script src="../../javascripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../CodeMirror/lib/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../../CodeMirror/theme/3024-night.css" />
+    <link rel="stylesheet" type="text/css" href="../../CodeMirror/addon/scroll/simplescrollbars.css" />
+    <script src="../../CodeMirror/lib/codemirror.js"></script>
+    <script src="../../CodeMirror/mode/xml/xml.js"></script>
+    <script src="../../CodeMirror/mode/javascript/javascript.js"></script>
+    <script src="../../CodeMirror/mode/css/css.js"></script>
+    <script src="../../CodeMirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="../../CodeMirror/addon/scroll/simplescrollbars.js"></script>
     <script src="../../javascripts/codemirror.js"></script>
   </body>
 </html>
