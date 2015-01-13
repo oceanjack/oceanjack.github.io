@@ -940,7 +940,7 @@ body > .head .name {
 }
 .article .content textarea {
   width:100%;
-  min-height:120px;
+  height:auto;
 }
 .article .content .CodeMirror {
   margin-bottom:1em;
