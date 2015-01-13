@@ -15,6 +15,9 @@ var playMusic = function() {
 var historyBack = function() {
   $('.head .back').on('click', function() {
     history && history.back();
+    if(history.length <= 0) {
+      window.location.assign(location.origin);
+    }
   }, false);
 }();
 
