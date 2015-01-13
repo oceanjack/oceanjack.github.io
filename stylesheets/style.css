@@ -901,6 +901,8 @@ body > .head {
 .article {
   width:100%;
   max-width:640px;
+  margin-left:auto;
+  margin-right:auto;
 }
 .article .header {
   font-size:1.618em;
