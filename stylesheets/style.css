@@ -938,6 +938,11 @@ body > .head .name {
   font-size:1em;
   line-height:1.6em;
 }
+.article .content .CodeMirror {
+  margin-bottom:1em;
+  border: 1px solid #eee;
+  height: auto;
+}
 .article img {
   max-width: 100%;
   border: 7px solid #fff;
