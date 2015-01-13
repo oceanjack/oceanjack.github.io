@@ -4,7 +4,6 @@ var createEdit = function() {
     var editor = CodeMirror.fromTextArea(node[i], {
       theme: '3024-night',
       scrollbarStyle: 'overlay',
-      lineNumbers: true,
       readOnly: 'nocursor',
       mode: 'htmlmixed',
       viewportMargin: Infinity
