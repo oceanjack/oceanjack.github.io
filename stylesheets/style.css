@@ -878,6 +878,9 @@ footer a:hover {
 @media only screen and (max-width: 479px) {}
 
 /*MyStyle*/
+body {
+  font-family: "Lora", "Georgia", "Xin Gothic", "Hiragino Sans GB", "WenQuanYi Micro Hei", "sans-serif";
+}
 body > .head {
   background-color:#b7b7b7;
   box-shadow:0px 0px 5px #ccc;
@@ -907,12 +910,14 @@ body > .head {
 .article .header {
   font-size:1.618em;
   line-height:normal;
-  margin-bottom:3px;
+  margin-bottom:1em;
+  text-align:center;
 }
 .article .date {
   color: #ccc;
   font-size:0.618em;
   margin-bottom:1em;
+  text-align:right;
 }
 .article .content p {
   font-size:1em;
