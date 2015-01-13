@@ -37,7 +37,7 @@ var shareWeixin = function() {
     "imgUrl" : "http://tp2.sinaimg.cn/2709785713/180/40042661305/1",
     "link" : window.location.href,
     "desc" : $('.header').text(),
-    "title" : document.title"
+    "title" : document.title
   };
 
   var wxCallbacks = {
