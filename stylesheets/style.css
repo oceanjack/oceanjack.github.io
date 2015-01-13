@@ -938,12 +938,16 @@ body > .head .name {
   font-size:1em;
   line-height:1.6em;
 }
+.article .content .textarea {
+  width:100%;
+  min-height:120px;
+}
 .article .content .CodeMirror {
   margin-bottom:1em;
   border: 1px solid #eee;
   height: auto;
 }
-.article .alert {
+.article .content .alert {
   color: #f00;
 }
 .article img {
