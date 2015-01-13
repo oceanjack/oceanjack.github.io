@@ -938,7 +938,7 @@ body > .head .name {
   font-size:1em;
   line-height:1.6em;
 }
-.article .content .textarea {
+.article .content textarea {
   width:100%;
   min-height:120px;
 }
