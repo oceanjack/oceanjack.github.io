@@ -33,7 +33,7 @@ var addScriptAndStyle = function() {
     ds.charset = 'UTF-8';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
     ++i;
-    loadscript();
+    setTimeout(loadscript, 10);
   };
   loadscript();
 };
