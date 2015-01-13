@@ -4,3 +4,6 @@
 [submodule "CodeMirror"]
 	path = CodeMirror
 	url = https://github.com/codemirror/CodeMirror.git
+[submodule "WeixinApi"]
+	path = WeixinApi
+	url = https://github.com/zxlie/WeixinApi.git
