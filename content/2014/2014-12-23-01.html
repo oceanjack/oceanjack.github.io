@@ -20,12 +20,12 @@
       <div class="article">
         <h3 class="header">搭建一个简单的网站</h3>
         <div class="content">
-          <p>本篇介绍关于如何使用 LeanCloud，jQuery，Bootstrap 来搭建一个网站。</p>
-          <p>这几天还在研究学习并制作这个网站。LeanCloud（戳<a target="_blank" href="https://leancloud.cn/">官网</a>）用于网站的后台，jQuery 作为 js 的库使用，Bootstrap 作为 css 库使用。</p>
-          <p>首先 LeanCloud 提供了一个后台，本例使用了 JavaScript 的 API 并写在了前端脚本文件中，这会使 KEY 暴露出来。不过，LeanCloud 提供角色控制 ACL，所以可以避免一些麻烦。但是，还是要考虑架一个 Node.js 后台，一些请求的逻辑不方便都暴露出来。戳<a target="_blank" href="https://leancloud.cn/start.html">快速入门</a>，详细一些的教程的话在<a target="_blank" href="https://leancloud.cn/docs/js_guide.html">这里</a>，平台提供了登陆注册等功能，所以也提供了一个默认的数据库及一些默认的表，可以在控制台方便的查看到数据库的信息并进行操作。如此节省了一些后台开支，可以更迅速的搭建出一个相对稳定可靠的后台。</p>
-          <p>jQuery 使用较为广泛了，这里使用它处理一些 Dom 任务。然后使用 Bootstrap 来快速搭建一些界面。这是一个比较常见的组合，其实本人第一次使用 Bootstrap，jQuery 也不是第一个接触的前端框架。在这里顺便介绍下 <a href="http://leanmodal.finelysliced.com.au/">jquery.leanModal</a>，弹窗小插架，冒出个提示啥的，登陆框啥挺方便的。</p>
-          <p>关于文章评论，这里使用了<a href="http://duoshuo.com/">多说</a>，国外的有<a href="https://disqus.com"></a>，但不是太好登录哈哈- -</p>
-          <p>现在前端各种库，各种工具还是不少的。比如 Facebook React，Google Closure，AngularJs，BackBone，D3等等，工具的话 npm，bower，grunt，glup等等。然后还有 Dcloud，APPCAN 这种用 js 来做 APP 的，Node 用 js 来做后台的。然后有对 js 和 css 语言做了一些扩展，有了 coffeescript，typescript，less，sass，scss等等，东西太多慢慢品尝吧</p>
+          <p>本篇简单介绍关于如何使用 LeanCloud，jQuery，Bootstrap 来搭建一个网站。</p>
+          <p>LeanCloud（戳<a target="_blank" href="https://leancloud.cn/">官网</a>）用于网站的后台，jQuery 作为 js 的库使用，Bootstrap 作为 css 库使用。</p>
+          <p>LeanCloud 提供了一个后台。它提供了诸多服务，数据库它为你搭建好了，一些用户登陆注册的逻辑也替你写好了，然后还有发短信，聊天，数据统计，数据库管理等等，这些只需要调用封装好的 API 即可，很方便吧？不用再重复造轮子了。这些功能都是按需收费的，对于中小型网站的话费用相对合理。本例使用了其中提供的 JavaScript （当然它有好多种语言的 API）的 API 并写在了前端脚本文件中，这会引起一些问题。不过，LeanCloud 提供角色控制 ACL，所以可以避免一些麻烦。可以要考虑架一个 Node.js 后台，毕竟一些请求的逻辑不方便都暴露到前端。戳<a target="_blank" href="https://leancloud.cn/start.html">快速入门</a>，详细一些的教程的话在<a target="_blank" href="https://leancloud.cn/docs/js_guide.html">这里</a>。</p>
+          <p>jQuery 使用较为广泛了，它较为容易上手，遇到需要的功能就去翻一下文档，便很快可以实现了。而且它的插件相当丰富，可以节省不少开发时间。本例使用它主要处理一些 Dom 任务。它有个类似的库叫 zeptojs ，函数库与 jQuery 一致，函数的名字都一样的，不过它主要适配移动端，代码体积会比 jQuery 小，不过兼容性就没那么全面了，希望加载速度快的话就用 zepto 吧。然后使用 Bootstrap 来快速搭建一些界面，省去重复编写一些 css 以及适配的麻烦，国内有个类似的框架叫“妹子UI”，听名字也是够了，在这里顺便介绍下 <a href="http://leanmodal.finelysliced.com.au/">jquery.leanModal</a>，弹窗小插架，冒出个提示啥的，登陆框啥挺方便的。</p>
+          <p>关于文章评论，这里使用了<a href="http://duoshuo.com/">多说</a>，一个第三方插架，可以迅速给网页加个评论，如此小伙伴们就可以多多吐槽了。国外的有<a href="https://disqus.com"></a>（这个才是鼻祖），但不是太好登录哈哈- -，因为好像被什么奇怪的东西挡住了哈哈- -。</p>
+          <p>现在前端各种库，各种工具还是不少的。比如 Facebook React，Google Closure，AngularJs，BackBone，D3 等等，工具的话 npm，bower，grunt，glup 等等。然后还有 Dcloud，APPCAN 这种用 js 来做 APP 的，Node 用 js 来做后台的。然后有对 js 和 css 语言做了一些扩展，有了 coffeescript，typescript，less，sass，scss 等等，东西太多慢慢品尝吧，这里就不做一一介绍了。</p>
           <p>演示请戳<a target="_blank" href="../../musketeers/">这里</a></p>
           <img src="../../images/2014/2014122301/back.png" />
           <p>首页</p>
@@ -38,7 +38,7 @@
         <div class="date">2014.12.23 南京</div>
       </div>
     </div>
-    <div class="foot">请勿转载&nbsp;@OceanJack&nbsp;2014</div>
+    <div class="foot">转载请注明出处&nbsp;@OceanJack&nbsp;2014</div>
     <script src="../../WeixinApi/WeixinApi.js"></script>
     <script src="../../javascripts/main.js"></script>
   </body>
