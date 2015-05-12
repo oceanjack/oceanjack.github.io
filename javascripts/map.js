@@ -36,7 +36,7 @@ var getMap = function() {
               "<div class='header'>" + pos[id].title + "</div>" +
               "<div class='content'>" + 
                 "<p>" + pos[id].text + "<p>" +
-              "<img src='http://7xj230.com1.z0.glb.clouddn.com" + pos[id].img + "imageView2/1/w/3420/h/420/interlace/1'>"
+              "<img src='http://7xj230.com1.z0.glb.clouddn.com" + pos[id].img + "/imageView2/1/w/3420/h/420/interlace/1'>"
               "</div>" + 
             "</div>";
           getMsg(con);
