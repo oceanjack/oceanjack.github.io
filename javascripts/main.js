@@ -48,7 +48,7 @@ var shareWeixin = function() {
     all : function(resp,shareTo) {}
   };
   WeixinApi.share(wxData,wxCallbacks);
-}();
+};
 
 //评论
 var duoshuoQuery = {short_name:"oceanjack"};
