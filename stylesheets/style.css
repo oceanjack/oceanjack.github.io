@@ -997,3 +997,9 @@ body > .foot {
 .maparticle {
   max-width: 280px;
 }
+.imgdesc {
+  text-align:center;
+  width:100%;
+  color:#999 !important;
+  font-size:0.9em !important;
+}
